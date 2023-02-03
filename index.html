@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="load()">
+    <header>
+        <h1>Music</h1>
+    </header>
+    <section >
+        <div class="player">
+            <h2 id="musicNumber">Music x of y</h2>
+            <img id="albumCover" class="cover">
+            <div class="infos">
+                <h3 id="musicName"></h3>
+                <h4 id="artistName"></h4>
+            </div>
+            <div class="track">
+                <div class="bar"></div>
+                <div class="time">
+                    <h5>0:00</h5>
+                    <h5>5:00</h5>
+                </div>
+            </div>
+
+            <!-- https://www.flaticon.com/br/packs/music-player-icons -->
+            <div class="buttons">
+                <button onclick="control('previous')"><img src="img/costas.png"></button>
+                <button onclick="play()"><img id="buttonPlay"></button>
+                <button onclick="control('next')"><img src="img/proximo.png"></button>
+            </div>
+        </div>
+        <div class="list">
+            <table id="listTable">
+
+            </table>
+        </div>
+    </section>
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>

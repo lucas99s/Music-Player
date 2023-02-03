@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: rgb(58, 58, 58);
+    --text-primary-color: rgb(255, 255, 255);
+
+    --secondary-color: rgb(19,19,19);
+
+
+    font-size: 16px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-primary-color);
+    padding: 1rem;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-primary-color);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+    height: 27rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+}
+
+.player h2, .player img, .player .track {
+    margin: .6rem;
+}
+
+.player h2 {
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.player h3 {
+    font-weight: 100;
+}
+.player h4 {
+    font-weight: 100;
+    font-size: .8rem;
+    margin-top: .2rem;
+    color: rgba(240, 248, 255, 0.609);
+}
+
+.player .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+
+.player .buttons button {
+    position: relative;
+    top: 1rem;
+    
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.player .buttons button img {
+    height: 1.5rem;
+    filter: invert();
+}
+
+/* provisorio */
+
+
+.cover {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 0rem;
+    background-size: cover;
+}
+
+.infos {
+    width: 75%;
+}
+
+.track {
+    background-color: rgba(255, 255, 255, 0.213);
+    height: .2rem;
+    width: 75%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.track .time {
+    margin: .6rem 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
